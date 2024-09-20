@@ -8,7 +8,16 @@ class BuilderListViewListContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Hier soll eine ListView zurückgegeben werden.
-    throw UnimplementedError();
+    return ListView.builder(
+      itemCount: products.length,
+      itemBuilder: (context, index) {
+        final product = products[index];
+        return ListTile(
+          title: Text(product.name),
+          subtitle: Text('Preis: \$${product.price}'),
+          trailing: Text('\$${product.price}'),
+        );
+      },
+    );
   }
 }

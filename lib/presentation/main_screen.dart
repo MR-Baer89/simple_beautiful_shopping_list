@@ -18,7 +18,7 @@ class MainScreen extends StatelessWidget {
           "Simple Beautiful Shopping List",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.purple,
+        backgroundColor: const Color.fromARGB(255, 29, 66, 200),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
